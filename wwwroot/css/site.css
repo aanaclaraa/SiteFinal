@@ -6,18 +6,26 @@ html {
     html {
         font-size: 16px;
         color: black;
+        font-family: Helvetica Neue;
+        color: deeppink;
     }
 }
 
 html {
-  position: relative;
+    position: relative;
+    font-family: Helvetica Neue;
+    color: deeppink;
 }
 
 body {
     margin-bottom: 60px;
+    font-family: Helvetica Neue;
+    color: deeppink;
 }
 .logo {
+    font-family: Helvetica Neue;
     width: 90px;
+    color: deeppink;
 }
 .tela-inicial {
     text-align: center;
@@ -30,4 +38,8 @@ body {
 }
 .colorir {
     background-color: lavenderblush;
+}
+.text-center {
+    font-family: Helvetica Neue;
+    color:deeppink;
 }
