@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - SiteFinal</title>
+    <title>@ViewData["Title"] - Essência Perfumes e Cosméticos</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/SiteFinal.styles.css" asp-append-version="true" />
@@ -12,14 +12,11 @@
     <link rel="stylesheet" href="~/Pessoa.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Produto.styles.css" asp-append-version="true" />
 </head>
-</head>
-</head>
-</head>
-<body>
+<body class="colorir">
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Cantinho do Perfume</a>
+                <img class="logo" src="https://s3-sa-east-1.amazonaws.com/projetos-artes/fullsize%2F2013%2F08%2F27%2F18%2FWDL-Logo-30776_7509_054504933_699640813.jpg" />
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -27,13 +24,16 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Cadastre-se" asp-action="Index">Cadastre-se</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Pessoa" asp-action="Index">Cadastre-se agora</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Produto" asp-action="Index">Produto</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Cadastre seu Produto" asp-action="Index">Cadastre seu Produto</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Marcas" asp-action="Index">Marca</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Produto" asp-action="Index">Produtos da Loja</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Marcas" asp-action="Index">Marcas</a>
                         </li>
                     </ul>
                 </div>
@@ -45,10 +45,9 @@
             @RenderBody()
         </main>
     </div>
-
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2023 - SiteFinal - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2023 - Essência Pesfumes e Cosméticos - <a asp-area="" asp-controller="Home" asp-action="Fale conosco">Fale conosco</a> <img class="telefone" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbWLFZOK5qwPROQBJdZwgy7CbPPOXvTzMbwBOxAWfyQj7TWdCC9gK9RK1mnStGRqsD24A&usqp=CAU" />
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

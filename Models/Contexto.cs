@@ -16,7 +16,5 @@ namespace SiteFinal.Models
 
         public DbSet<Marca> Marca { get; set; }
 
-        public DbSet<CategoriaProduto> CategoriaProduto { get; set; }
-
     }
 }

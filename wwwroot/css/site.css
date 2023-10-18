@@ -3,16 +3,31 @@ html {
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+        color: black;
+    }
 }
 
 html {
   position: relative;
-  min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+}
+.logo {
+    width: 90px;
+}
+.tela-inicial {
+    text-align: center;
+    width: 1520px;
+    height: 900px;
+    border: solid 2px;
+}
+.telefone {
+    width: 50px;
+}
+.colorir {
+    background-color: lavenderblush;
 }
