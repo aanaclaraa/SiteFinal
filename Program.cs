@@ -5,14 +5,14 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        var builder = WebApplication.CreateBuilder(args)        // Add services to the container.
+        var builder = WebApplication.CreateBuilder(args);       // Add services to the container.
         builder.Services.AddControllersWithViews();
 
-builder.Services.AddDbContext<Contexto> //Ana
-    (options => options.UseSqlServer("Data Source=SP-1491027\\SQLSENAI;Initial Catalog = SiteFinal;Integrated Security = True;TrustServerCertificate = True"));
+        /*builder.Services.AddDbContext<Contexto> //Ana
+            (options => options.UseSqlServer("Data Source=SP-1491027\\SQLSENAI;Initial Catalog = SiteFinal;Integrated Security = True;TrustServerCertificate = True"));*/
 
-        builder.Services.AddDbContext<Contexto> //Melina
-            (options => options.UseSqlServer("Data Source=SP-1491008\\SQLSENAI;Initial Catalog = SiteFinal;Integrated Security = True;TrustServerCertificate = True"));
+        /*builder.Services.AddDbContext<Contexto> //Melina
+            (options => options.UseSqlServer("Data Source=SP-1491008\\SQLSENAI;Initial Catalog = SiteFinal;Integrated Security = True;TrustServerCertificate = True"));*/
 
         /*builder.Services.AddDbContext<Contexto> //Bryan
             (options => options.UseSqlServer("Data Source=SP-1491018\\SQLSENAI;Initial Catalog = SiteFinal;Integrated Security = True;TrustServerCertificate = True"));*/
