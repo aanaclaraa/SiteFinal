@@ -41,49 +41,6 @@ namespace SiteFinal.Migrations
                     b.ToTable("CadastroProduto");
                 });
 
-            modelBuilder.Entity("SiteFinal.Models.CategoriaProduto", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasColumnName("CategoriaId");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("NomeCategoria")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("NomeCategoria");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("CategoriaProduto");
-                });
-
-            modelBuilder.Entity("SiteFinal.Models.Informacao", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasColumnName("Id_Informacao");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Oquesao")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("OqueSao");
-
-                    b.Property<string>("SaberMas")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)")
-                        .HasColumnName("SaberMais");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Informacao");
-                });
-
             modelBuilder.Entity("SiteFinal.Models.Marca", b =>
                 {
                     b.Property<int>("Id")
