@@ -22,20 +22,7 @@ namespace SiteFinal.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_CadastroProduto", x => x.Id_Produto);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "CategoriaProduto",
-                columns: table => new
-                {
-                    CategoriaId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    NomeCategoria = table.Column<string>(type: "nvarchar(max)", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_CategoriaProduto", x => x.CategoriaId);
-                });
+                });               
 
             migrationBuilder.CreateTable(
                 name: "Marca",
@@ -88,10 +75,7 @@ namespace SiteFinal.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "CadastroProduto");
-
-            migrationBuilder.DropTable(
-                name: "CategoriaProduto");
+                name: "CadastroProduto");           
 
             migrationBuilder.DropTable(
                 name: "Marca");

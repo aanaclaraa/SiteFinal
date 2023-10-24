@@ -17,3 +17,9 @@ body {
     margin-bottom: 60px;
     background-color: lavenderblush;
 }
+.logo {
+    font-family: Helvetica Neue;
+    width: 90px;
+    height: 90px;
+    color: black;
+}
