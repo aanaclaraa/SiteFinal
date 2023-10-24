@@ -6,8 +6,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddDbContext<Contexto> //Ana
-    (options => options.UseSqlServer("Data Source=SP-1491027\\SQLSENAI;Initial Catalog = SiteFinal;Integrated Security = True;TrustServerCertificate = True"));
+/*builder.Services.AddDbContext<Contexto> //Ana
+    (options => options.UseSqlServer("Data Source=SP-1491027\\SQLSENAI;Initial Catalog = SiteFinal;Integrated Security = True;TrustServerCertificate = True"));*/
 
 /*builder.Services.AddDbContext<Contexto> //Melina
     (options => options.UseSqlServer("Data Source=SP-1491008\\SQLSENAI;Initial Catalog = SiteFinal;Integrated Security = True;TrustServerCertificate = True"));*/
