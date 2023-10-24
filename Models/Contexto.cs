@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using SiteFinal.Models;
 
 namespace SiteFinal.Models
 {
@@ -15,6 +16,5 @@ namespace SiteFinal.Models
         public DbSet<CadastroProduto> CadastroProduto { get; set; }
 
         public DbSet<Marca> Marca { get; set; }
-
     }
 }

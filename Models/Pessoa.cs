@@ -16,7 +16,7 @@ namespace SiteFinal.Models
 
         [Column("Idade")]
         [Display(Name = "Idade")]
-        public string IdadePessoa { get; set; }
+        public string IdadePessoa { get; set; } = string.Empty;
 
         [Column("Sexo")]
         [Display(Name = "Sexo")]

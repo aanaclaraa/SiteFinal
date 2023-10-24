@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace SiteFinal.Models
 {
+    [Table("Marca")]
     public class Marca
     {
         [Column("MarcaId")]
