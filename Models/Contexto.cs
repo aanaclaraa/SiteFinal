@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using SiteFinal.Models;
 
 namespace SiteFinal.Models
 {
@@ -17,6 +18,8 @@ namespace SiteFinal.Models
         public DbSet<Marca> Marca { get; set; }
 
         public DbSet<CategoriaProduto> CategoriaProduto { get; set; }
+
+        public DbSet<Informacao>? Informacao { get; set; }
 
     }
 }

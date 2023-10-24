@@ -1,18 +1,31 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
+    color: black;
+    font-family: Helvetica Neue;
 }
 
 @media (min-width: 768px) {
   html {
     font-size: 16px;
+    color: black;
+
   }
 }
 
 html {
   position: relative;
-  min-height: 100%;
+  font-family: Helvetica Neue;
+  color: black;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    color: black;
+    margin-bottom: 60px
+}
+.Logo {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 90px;
+    width: 90px;
+    color: black;
 }
